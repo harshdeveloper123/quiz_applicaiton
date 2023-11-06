@@ -1,0 +1,229 @@
+/* css code  */
+html{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+*{
+    margin: 1%;
+    padding: 0%;
+    box-sizing: border-box; 
+}
+/* css to the home page is applied */
+#home_page{
+    border: 2px solid aqua;
+    border-radius: 30px;
+    width: 60vw;
+    margin-left: 20%;
+}
+/* css to be applied on the logo of the quiz on home page  */
+img{
+    height: 20vh;
+    width: 10vw;
+   margin-left: 42%;
+   margin-top: 2%;
+  
+}
+/* css to be applied on the line in which the hello word and user name is shown  */
+.greet{
+    color: rgb(0, 255, 242);
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 0px;
+}
+/* css to be applied on user details in which user enter the name  */
+#user_details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.User_Name{
+    font-size: 4vh;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0px;
+}
+input{
+    height: 5vh;
+    width: 25vw;
+    border-radius: 20px;
+    padding: 10px;
+}
+#enter{
+    height: 5vh;
+    width: 10vw;
+    margin-left: 1%;
+    background-color: aqua;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#displayName{
+    text-align: center;
+    color: rgb(0, 255, 55);
+    font-weight: bolder;
+    font-size: 2vw;
+}
+/* css to be applied on quiz details in which told about the quiz question to asked */
+#quiz_details{
+    text-align: center;
+    color: aqua;
+    font-weight: bolder;
+    font-size: 1.5vw;
+}
+/* css to be applied on category buttons of quiz like the buttons are of accounts, logical reasoning and two others */
+.category-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 6vh;
+    margin-left: 15%;
+    border-radius: 20px;
+    cursor: pointer;
+  
+}
+/* css to be applied on start quiz button  */
+#startQuiz{
+    margin: auto;
+    height: 5vh;
+    width: 8vw;
+    background-color: rgba(12, 190, 190, 0.849);
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+/* this is a class which is dynamically added or removed while selection of category for attempting the quiz */
+.selected{
+    border-width: 5px;
+    border-color: green;
+}
+/* css to be applied on question page.  */
+#questionPage{
+    background-color: white;
+    width: 50%;
+    height: 450px;
+    margin: auto;
+    margin-top: 10%;
+    border: 2px solid aqua;
+    border-radius:20px ;
+
+}
+#subjectTitle{
+    height: 4vh;
+    width: 14vw;
+    font-size: 1.5vw;
+    text-align: center;
+    margin: auto;
+    background-color: rgb(247, 145, 108);
+    border-radius:20px ;
+    border: 2px solid aqua;
+    margin-top: 10px;
+}
+#questionTitle{
+    text-align: center;
+    border: 2px solid orangered;
+    border-radius: 20px;
+    margin-top: 50px;
+    font-size: 2vw;
+    font-weight: bolder;
+    padding: 20px;
+}
+#options{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+/* css to be applied on option 1and 2 */
+.option12{
+    display: flex;
+
+}
+/* css is to be applied on option 3 and 4 */
+.option34{
+    display: flex;
+}
+/* css to be applied on the list of options and selector is applied on li */
+ul li{
+    border: 2px solid aqua;
+    border-radius: 20px;
+    width: 23vw;
+    color: aqua;
+}
+ul li:hover{
+    background-color: darkgray;
+}
+/* css to be applied on next button which is visible on question area.  */
+#next{
+    margin: auto;
+    text-align: center;
+    height: 5vh;
+    width: 10vw;
+    border-radius: 20px;
+    background-color: aqua;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+#resultTitle{
+    margin-left: 40%;
+    height: 4vh;
+    width: 15vw;
+    background-color: aqua;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.userMarks{
+    display: flex;
+}
+/* css is to be applied on timer button.  */
+#timer{
+    width: 10vh;
+    height: 5vh;
+    background-color: aqua;
+    color: green;
+    text-align: center;
+    padding: 5px;
+    font-weight: bolder;
+    font-size: 1.5vw;
+    border-radius: 20px;
+}
+/* css applied on score details which is shown result page  */
+.scoreDetails{
+    margin-left: 50%;
+    background-color: aqua;
+    height: 4vh;
+    width: 8vw;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#userResult{
+    margin: 10%;
+    background-color: rgb(204, 247, 247);
+    height: 50vh;
+    border-radius: 20px; 
+    padding: 40px;
+    font-size: 1.5vw;
+}
+
+#userResult p{
+ text-align: center;
+}
+#goToHome , #restart{
+    text-align: center;
+    margin-left: 20%;
+    border-radius: 20px;
+    background-color: aqua;
+    height: 7vh;
+    width: 14vw;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+  
+
+/* end of css code applied on quiz application */

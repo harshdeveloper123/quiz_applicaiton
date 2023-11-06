@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- quiz application  -->
+    <div class="container">
+        <!-- firstly I created home page for quiz application and for home the code started from line number14 to line number 30. -->
+        <div id="home_page">
+        <img src="./testbook_logo.png" alt="Testbook Logo">
+        <h1 class="greet">Hello User!</h1>
+        <p class="User_Name">Enter your name to continue to Quiz</p>
+        <div id="user_details">
+        <label for="name"></label>
+        <!-- In this the user entered the name -->
+        <input type="text" id="name" placeholder="Enter your name">
+        <!-- by clicking on enter the user name shown on screen -->
+        <button type="submit" id="enter">Enter</button> 
+       </div>
+       <!-- to display the name on the screen the display name id is created on line number 26 -->
+    <p id="displayName"></p>
+    <!-- what these quiz include shown in the quiz_details id on line number 28. -->
+    <p id="quiz_details"></p>
+    <!-- four types of quiz categories i added in this home page below written -->
+    <div id="Quiz_category" style="display: none;">
+    <button style="background-color: white;" class="category-button" onclick="selectButton(this)" id="math">Math</button>
+    <button style="background-color: white;" class="category-button" onclick="selectButton(this)" id="accounts">Accounts</button>
+    <button style="background-color: white;" class="category-button" onclick="selectButton(this)" id="logicalReasoning">Logical Reasoning</button>
+    <button style="background-color: white;" class="category-button" onclick="selectButton(this)" id="htmlandcss">Html and Css</button>
+    <!-- by clicking on start button the quiz will start and startQuiz() function will executed -->
+    <button  id="startQuiz" style="display: none;" onclick="startQuiz()">Start Quiz</button>
+</div>
+ </div>
+ <!-- from line number 41 to 63 the question area code is take place  -->
+ <!-- Now i added the questions on in id name questionPage on line number 41. so these portion totally dedicated to question display area  -->
+    <div id="questionPage" style="display: none;">
+       
+        <div id="subjectTitle"><span id="currentSubjectTitle"></span></div>
+        <!-- for show the timer and score on the question area a class name userMarks -->
+        <div class="userMarks">
+        <div>Time Left</div>
+        <div id="timer"></div>
+        <div class="scoreDetails">
+        <p>Score <span id="score">0</span></p>
+    </div>
+    </div>
+    <!-- question statement shown in the id questionTitle on line number 51. -->
+        <div id="questionTitle"></div>
+        <div id="queNo" style="height: 4vh; width: 6vw;background-color: aqua;border-radius: 50%;text-align: center;position: relative;margin-left: 45%;"></div>
+        <ul id="options" style="list-style-type: none;">
+            <div class="option12">
+            <li id="option1"></li>
+            <li id="option2"></li></div>
+            <div class="option34">
+            <li id="option3"></li>
+            <li id="option4"></li>
+        </div>
+        </ul>
+        <!-- by clicking on next button the next question will be displayed -->
+        <button id="next">Next</button>
+      </div>
+    </div>
+    <div id="userResult" style="display: none;">
+        <div id="resultTitle"> Your Result is </div>
+        <p><span id="resultName"></span></p>
+        <p>Attempted Quetions-<span id="attemptedQuestion"></span></p>
+        <p>Correct answer -<span id="correctAnswer"></span></p>
+       <p>Wrong Answer -<span id="wrongAnswer"></span></p>
+        <p>Score In Percentage -<span id="scoreInPercentage"></span></p>
+        <button id="goToHome">Go To Home Page</button>
+        <button id="restart">Restart</button>
+    </div>
+    
+    <script src="script.js"> </script>
+</body>
+</html>
